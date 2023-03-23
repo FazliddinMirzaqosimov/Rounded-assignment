@@ -1,0 +1,27 @@
+* {
+     padding: 0;
+     margin: 0;
+     color: inherit;
+     box-sizing: border-box;
+     text-decoration: none;
+     outline: 1px solid rgba(255, 0, 0, 0.159);
+     font-family: inherit;
+}
+
+body {
+     font-family: "Main_Font";
+     background-color: #000000;
+     color: white;
+     max-width: 1700px;
+     margin: 0 auto;
+}
+
+@font-face {
+     font-family: "Main_Font";
+     src: url("./assets/fonts/Laviossa-Medium.otf");
+}
+
+@font-face {
+     font-family: "Second_Font";
+     src: url("./assets/fonts/AllertaStencil-Regular.ttf");
+}

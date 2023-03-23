@@ -1,0 +1,13 @@
+.button-component {
+     padding: 38px 68px;
+     border-radius: 20px;
+     &.usual {
+          box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8f1919;
+          background: linear-gradient(87.05deg, #f4013d 17.99%, #f0073e 43%, #f1013b 68.01%, #d90e3c 93.02%);
+          border: none;
+     }
+     &.shaffof {
+          border: 3px solid #ce3333;
+          background: none;
+     }
+}
