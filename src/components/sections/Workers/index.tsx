@@ -3,10 +3,12 @@ import profile from "../../../assets/images/Rectangle 393.png";
 import Title from "../../Title";
 import useIntersectionObserver from "../../InterSectionObserver";
 import { useRef } from "react";
+import { useCursorContext } from "../../Cursor";
 
 function Workers({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
   const entry = useIntersectionObserver(ref, {});
+  const { functions } = useCursorContext();
 
   return (
     <div
@@ -18,21 +20,25 @@ function Workers({ style }: { style?: React.CSSProperties }) {
       <div className="cards">
         <div className="card">
           <img src={profile} alt="" />
-          <h2>Алина</h2>
+          <h2 {...functions}>Алина</h2>
         </div>
         <div className="middle">
           <div className="card">
             <img src={profile} alt="" />
-            <h2 className="red">Алина</h2>
+            <h2 className="red" {...functions}>
+              Алина
+            </h2>
           </div>
           <div className="card">
             <img src={profile} alt="" />
-            <h2>Алина</h2>
+            <h2 {...functions}>Алина</h2>
           </div>
         </div>
         <div className="card">
           <img src={profile} alt="" />
-          <h2 className="red">Алина</h2>
+          <h2 className="red" {...functions}>
+            Алина
+          </h2>
         </div>
       </div>
     </div>

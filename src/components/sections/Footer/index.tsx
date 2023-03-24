@@ -75,16 +75,16 @@ function Footer() {
             <Button size="small"> Перезвоните нам</Button>
           </Link>
           <div className="icons">
-            <Link to={"/"}>
+            <Link to={"/"} target="_blank">
               <FaFacebookF />
             </Link>
-            <Link to={"/"}>
+            <Link to={"/"} target="_blank">
               <BsTwitter />
             </Link>
-            <Link to={"/"}>
+            <Link to={"/"} target="_blank">
               <AiFillInstagram />
             </Link>
-            <Link to={"/"}>
+            <Link to={"/"} target="_blank">
               <FaLinkedinIn />
             </Link>
           </div>
