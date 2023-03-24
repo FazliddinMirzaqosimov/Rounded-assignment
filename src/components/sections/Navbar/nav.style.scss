@@ -1,0 +1,53 @@
+nav {
+     position: fixed;
+     inset: 20px 8%;
+     height: 90px;
+     backdrop-filter: blur(10px);
+     z-index: 10;
+     font-family: "Second_Font";
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+     border-bottom: 1px solid white;
+     img {
+          width: 100%;
+     }
+     .menu {
+          font-size: 18px;
+          display: flex;
+          justify-content: space-between;
+          gap: 3%;
+          width: 80%;
+     }
+     .menu-button {
+          display: none;
+     }
+}
+
+@media (max-width: 1050px) {
+     nav {
+          .menu-button {
+               display: block;
+          }
+          .menu {
+               position: fixed;
+               width: 100vw;
+               height: 100vh;
+               top: -20px;
+               left: -10%;
+               background-color: black;
+               flex-wrap: wrap;
+               transition: 500ms;
+               z-index: -1;
+               padding: 140px 8% 30px;
+               clip-path: polygon(0 0, 100% 0, 100% 100% 0, 100% 0);
+               a {
+                    width: 100%;
+               }
+          }
+          .menu.active {
+               clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+          }
+     }
+}

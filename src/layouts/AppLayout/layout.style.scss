@@ -1,4 +1,7 @@
 .app-layout {
      display: flex;
      flex-direction: column;
+     background-color: #0e0e12;
+     mix-blend-mode: difference;
+     overflow-x: hidden;
 }

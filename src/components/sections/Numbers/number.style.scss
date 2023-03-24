@@ -1,0 +1,43 @@
+.number-section {
+     max-width: 1200px;
+     width: 100%;
+     padding: 0 8%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     gap: 5%;
+     h1 {
+          font-family: "Second_Font";
+          font-size: 60px;
+          font-weight: 400;
+          background: linear-gradient(90deg, #f4013d 2.52%, #da0e3c 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          padding-bottom: 20px;
+     }
+     p {
+          font-size: 22px;
+     }
+}
+
+@media (max-width: 1050px) {
+     .number-section {
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          .card {
+               width: 45%;
+          }
+     }
+}
+
+@media (max-width: 700px) {
+     .number-section {
+          flex-wrap: wrap;
+          .card {
+               width: 100%;
+          }
+     }
+}

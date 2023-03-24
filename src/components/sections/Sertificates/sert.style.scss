@@ -1,0 +1,68 @@
+.sertificate-section {
+     padding: 200px 8%;
+     position: relative;
+     .pink-border {
+          position: absolute;
+          z-index: -1;
+          bottom: 30%;
+          right: -20px;
+          font-size: 40px;
+     }
+     img {
+          width: 100%;
+     }
+     .card {
+          scale: 0;
+          opacity: 0;
+          translate: 0 400px;
+          transition: 2s;
+     }
+     .cards {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 170px;
+          max-width: 1000px;
+          width: 100%;
+          margin: 0 auto;
+     }
+     &.active .card.middle {
+          position: relative;
+          translate: 0 -130px;
+          &::before {
+               content: "";
+               position: absolute;
+               bottom: -30px;
+               width: 80%;
+               left: 10%;
+               height: 2px;
+               background: #d31b1b;
+          }
+     }
+     .card {
+          width: 30%;
+     }
+     &.active {
+          .card {
+               scale: 1;
+               opacity: 1;
+               translate: 0;
+          }
+     }
+}
+
+@media (max-width: 850px) {
+     .sertificate-section {
+          .cards {
+               flex-wrap: wrap;
+               gap: 30px;
+               justify-content: center;
+               .card {
+                    max-width: 400px;
+                    width: 100%;
+               }
+               .card:first-child {
+                    order: 1;
+               }
+          }
+     }
+}

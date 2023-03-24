@@ -1,0 +1,19 @@
+.arrow-component {
+     position: relative;
+     width: 40px;
+     z-index: 3;
+     img {
+          width: 100%;
+     }
+     &::after {
+          content: "";
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          z-index: -1;
+          translate: 50% -50%;
+          background: linear-gradient(180deg, #f3023e 0%, #f0073e 50%, #a10c2e 100%);
+          padding: 13px;
+          border-radius: 50%;
+     }
+}

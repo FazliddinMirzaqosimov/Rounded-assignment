@@ -1,0 +1,94 @@
+footer {
+     padding: 80px 8% 160px;
+     &.active {
+          .list-items .list-item * {
+               scale: 1;
+               opacity: 1;
+          }
+     }
+}
+footer .list-items {
+     font-family: "Dm Sans";
+     display: flex;
+     justify-content: space-between;
+     gap: 5%;
+
+     a {
+          transition: 300ms;
+          transform-origin: left center;
+     }
+     a:hover {
+          scale: 1.1 1;
+     }
+     button {
+          font-size: 20px;
+     }
+     .list-item {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          * {
+               scale: 0;
+               opacity: 0;
+               transition: 1s;
+          }
+          a {
+               display: flex;
+               gap: 10px;
+               align-items: center;
+          }
+     }
+     .list-item:first-child {
+          max-width: 400px;
+          img {
+               width: 100%;
+          }
+          h1 {
+               margin: 50px 0 24px;
+               color: #f4013d;
+          }
+     }
+     .list-item:last-child {
+          .icons {
+               display: flex;
+               gap: 10px;
+               a {
+                    color: #f4013d;
+                    background-color: white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+               }
+               a:hover {
+                    color: white;
+                    background-color: #f4013d;
+               }
+          }
+     }
+}
+
+@media (max-width: 1050px) {
+     footer {
+          .list-items {
+               row-gap: 40px;
+               flex-wrap: wrap;
+          }
+          .list-item {
+               width: 45%;
+          }
+     }
+}
+
+@media (max-width: 500px) {
+     footer {
+          .list-item:first-child,
+          .list-item:last-child {
+               width: 100%;
+          }
+          .list-item {
+          }
+     }
+}

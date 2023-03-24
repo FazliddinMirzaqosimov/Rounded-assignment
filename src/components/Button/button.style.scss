@@ -6,8 +6,34 @@
           background: linear-gradient(87.05deg, #f4013d 17.99%, #f0073e 43%, #f1013b 68.01%, #d90e3c 93.02%);
           border: none;
      }
+     &.small {
+          padding: 20px 30px;
+     }
      &.shaffof {
           border: 3px solid #ce3333;
           background: none;
+     }
+}
+
+h1.title-component {
+     font-size: 70px;
+}
+@media (max-width: 1050px) {
+     .button-component {
+          padding: 20px 35px;
+     }
+}
+@media (max-width: 700px) {
+     .button-component {
+          padding: 15px 30px;
+     }
+     h1.title-component {
+          font-size: 50px;
+     }
+}
+
+@media (max-width: 500px) {
+     h1.title-component {
+          font-size: 30px;
      }
 }

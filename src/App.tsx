@@ -1,11 +1,14 @@
 import CursorProvider from "./components/Cursor";
 import AppLayout from "./layouts/AppLayout";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <CursorProvider>
-      <AppLayout />
-    </CursorProvider>
+    <BrowserRouter>
+      <CursorProvider>
+        <AppLayout />
+      </CursorProvider>
+    </BrowserRouter>
   );
 }
 
