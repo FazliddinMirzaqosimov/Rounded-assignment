@@ -1,6 +1,6 @@
 nav {
      position: fixed;
-     inset: 20px 8%;
+     inset: 0 0;
      height: 90px;
      backdrop-filter: blur(10px);
      z-index: 10;
@@ -10,7 +10,7 @@ nav {
      align-items: center;
      gap: 40px;
      border-bottom: 1px solid white;
-     padding: 20px;
+     padding: 20px 8%;
      img {
           width: 100%;
      }

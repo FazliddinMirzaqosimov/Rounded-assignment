@@ -7,11 +7,12 @@ import { useCursorContext } from "../../Cursor";
 import Title from "../../Title";
 import useIntersectionObserver from "../../InterSectionObserver";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Showcase({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
   const entry = useIntersectionObserver(ref, {});
- 
+
   return (
     <div
       className={"showcase-section " + (entry?.isIntersecting ? "active" : "")}
@@ -30,8 +31,14 @@ function Showcase({ style }: { style?: React.CSSProperties }) {
           nisi.
         </p>
         <div className="buttons">
-          <Button>Lorem ipsum dolor</Button>
-          <Button type="shaffof">Lorem ipsum dolor</Button>
+          <Link to="">
+            {" "}
+            <Button>Lorem ipsum dolor</Button>
+          </Link>
+          <Link to="">
+            {" "}
+            <Button type="shaffof">Lorem ipsum dolor</Button>
+          </Link>
         </div>
       </div>
     </div>
