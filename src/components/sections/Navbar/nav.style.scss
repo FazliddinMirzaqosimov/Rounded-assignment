@@ -10,6 +10,7 @@ nav {
      align-items: center;
      gap: 20px;
      border-bottom: 1px solid white;
+     padding: 20px;
      img {
           width: 100%;
      }
@@ -36,18 +37,19 @@ nav {
                height: 100vh;
                top: -20px;
                left: -10%;
+               // inset: 0;
                background-color: black;
                flex-wrap: wrap;
                transition: 500ms;
                z-index: -1;
                padding: 140px 8% 30px;
-               clip-path: polygon(0 0, 100% 0, 100% 100% 0, 100% 0);
+               clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                a {
                     width: 100%;
                }
           }
           .menu.active {
-               clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           }
      }
 }

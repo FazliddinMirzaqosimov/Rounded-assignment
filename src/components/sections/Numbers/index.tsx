@@ -3,6 +3,7 @@ import "./number.style.scss";
 import React, { useRef } from "react";
 import { useCountUp } from "use-count-up";
 import useIntersectionObserver from "../../InterSectionObserver";
+import { useCursorContext } from "../../Cursor";
 
 function Numbers({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -10,6 +11,7 @@ function Numbers({ style }: { style?: React.CSSProperties }) {
     root: null,
     rootMargin: "0px 0px -200px",
   });
+  const { functions } = useCursorContext();
 
   const { value: value1 } = useCountUp({
     isCounting: entry?.isIntersecting,
@@ -32,15 +34,15 @@ function Numbers({ style }: { style?: React.CSSProperties }) {
   return (
     <div className="number-section" style={style} ref={ref}>
       <div className="card">
-        <h1>{value1}</h1>
+        <h1 {...functions}>{value1}</h1>
         <p>Lorem ipsum dolor sit amet</p>
       </div>{" "}
       <div className="card">
-        <h1>{value2}+</h1>
+        <h1 {...functions}>{value2}+</h1>
         <p>Lorem ipsum dolor sit amet</p>
       </div>{" "}
       <div className="card">
-        <h1>{value3} </h1>
+        <h1 {...functions}>{value3} </h1>
         <p>Lorem ipsum dolor sit amet</p>
       </div>
     </div>
