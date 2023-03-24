@@ -1,8 +1,9 @@
 .about-section {
      display: flex;
      align-items: center;
-     padding: 0 8%;
      gap: 30px;
+     position: relative;
+     overflow: hidden;
      .text {
           width: 55%;
           translate: -300px;
@@ -37,6 +38,13 @@
                scale: 1;
                opacity: 1;
           }
+     }
+     .pink-blur {
+          position: absolute;
+          top: 0;
+          left: 0;
+          translate: -50% -50%;
+          z-index: -1;
      }
 }
 .pink-border {

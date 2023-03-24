@@ -47,6 +47,13 @@
                translate: 0;
           }
      }
+     .pink-blur {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1;
+          translate: 50% -50%;
+     }
 }
 
 @media (max-width: 1050px) {

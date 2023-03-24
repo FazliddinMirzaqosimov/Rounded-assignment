@@ -1,5 +1,6 @@
 .courses-section {
      padding: 0 8%;
+     position: relative;
      .cards {
           display: flex;
           justify-content: space-between;
@@ -70,6 +71,17 @@
                opacity: 1;
                translate: 0;
           }
+     }
+     .pink-blur {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          translate: -50% 0;
+          z-index: -1;
+     }
+     .fingerprint {
+          left: 0;
+          top: 0;
      }
 }
 

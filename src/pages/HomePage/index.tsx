@@ -13,7 +13,7 @@ function HomePage() {
   return (
     <>
       <Showcase />
-      <About style={{ margin: "150px 0 190px" }} />
+      <About style={{ padding: "150px 8% 190px" }} />
       <Banner />
       <Courses style={{ margin: "150px 0" }} />
       <Workers />

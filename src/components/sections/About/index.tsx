@@ -3,6 +3,7 @@ import image from "../../../assets/images/Design.png";
 import Title from "../../Title";
 import useIntersectionObserver from "../../InterSectionObserver";
 import { useRef } from "react";
+import Blur from "../../Blur";
 
 function About({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -29,6 +30,7 @@ function About({ style }: { style?: React.CSSProperties }) {
         <img src={image} alt="" />
         <h1 className="pink-border">О НАС</h1>
       </div>
+      <Blur className="pink-blur top-right  " />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .banner-section {
      padding: 0 8%;
+     position: relative;
      ul {
           padding: 5%;
           list-style: none;
@@ -44,6 +45,18 @@
                scale: 1;
                opacity: 1;
           }
+     }
+     .pink-blur {
+          position: absolute;
+          right: 0;
+          z-index: -1;
+          top: 0;
+          translate: 50% 30%;
+     }
+     .fingerprint {
+          right: 0;
+          top: 0;
+          translate: 0 -50%;
      }
 }
 

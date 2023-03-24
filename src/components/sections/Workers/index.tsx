@@ -4,6 +4,7 @@ import Title from "../../Title";
 import useIntersectionObserver from "../../InterSectionObserver";
 import { useRef } from "react";
 import { useCursorContext } from "../../Cursor";
+import Finger from "../../Finger";
 
 function Workers({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -41,6 +42,7 @@ function Workers({ style }: { style?: React.CSSProperties }) {
           </h2>
         </div>
       </div>
+      <Finger className="fingerprint" type="right" />
     </div>
   );
 }

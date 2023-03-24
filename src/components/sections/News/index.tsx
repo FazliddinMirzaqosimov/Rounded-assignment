@@ -4,6 +4,7 @@ import image1 from "../../../assets/images/Rectangle 398.png";
 import image2 from "../../../assets/images/Rectangle 399.png";
 import { useRef } from "react";
 import useIntersectionObserver from "../../InterSectionObserver";
+import Blur from "../../Blur";
 
 function News({ style }: { style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -31,6 +32,7 @@ function News({ style }: { style?: React.CSSProperties }) {
           ullamcorper nulla.
         </p>
       </div>
+      <Blur className="pink-blur bottom-left  "></Blur>
     </div>
   );
 }

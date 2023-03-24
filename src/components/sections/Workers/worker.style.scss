@@ -1,6 +1,6 @@
 .workers-section {
      padding: 0 8%;
-     img {
+     .cards img {
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -53,11 +53,15 @@
           .cards > .card:first-child,
           .cards > .card:last-child,
           .cards,
-          img {
+          .cards img {
                scale: 1;
                opacity: 1;
                translate: 0;
           }
+     }
+     .fingerprint {
+          right: 0;
+          translate: 0 50%;
      }
 }
 

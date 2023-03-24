@@ -1,8 +1,10 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Arrow from "../../Arrow";
+import Blur from "../../Blur";
 import Button from "../../Button";
 import { useCursorContext } from "../../Cursor";
+import Finger from "../../Finger";
 import useIntersectionObserver from "../../InterSectionObserver";
 import Title from "../../Title";
 import "./coures.style.scss";
@@ -42,6 +44,8 @@ function Courses({ style }: { style?: React.CSSProperties }) {
         {" "}
         <Button>ВСЕ КУРСЫ</Button>
       </Link>
+      <Blur className="pink-blur top-right  "></Blur>
+      <Finger className="fingerprint" type="left" />
     </div>
   );
 }

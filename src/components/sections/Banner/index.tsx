@@ -6,7 +6,9 @@ import wallet from "../../../assets/images/wallet.png";
 import { useCursorContext } from "../../Cursor";
 import { useRef } from "react";
 import useIntersectionObserver from "../../InterSectionObserver";
-
+import Blur from "../../Blur";
+import Finger from "../../Finger";
+ 
 type SectionType = {
   id: string;
   image: string;
@@ -42,6 +44,8 @@ function Banner({ style }: { style?: React.CSSProperties }) {
           </li>
         ))}
       </ul>
+      <Blur className="pink-blur bottom-left" />
+      <Finger className="fingerprint" type="right" />
     </div>
   );
 }

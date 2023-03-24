@@ -15,6 +15,7 @@ body {
      background-color: #000000;
      color: white;
      max-width: 1700px;
+     // animation: name duration timing-function delay iteration-count direction fill-mode;
      margin: 0 auto;
 }
 
@@ -26,4 +27,44 @@ body {
 @font-face {
      font-family: "Second_Font";
      src: url("./assets/fonts/AllertaStencil-Regular.ttf");
+}
+
+.top-right {
+     animation: top-right 50s infinite;
+}
+.bottom-left {
+     animation: bottom-left 50s infinite;
+}
+@keyframes top-right {
+     0% {
+     }
+     20% {
+          translate: 0 -200px;
+     }
+     40% {
+          translate: 90vw -200px;
+     }
+     60% {
+          translate: 90vw 0;
+     }
+     100% {
+          translate: 0 0;
+     }
+}
+
+@keyframes bottom-left {
+     0% {
+     }
+     20% {
+          translate: 0 200px;
+     }
+     40% {
+          translate: -90vw 200px;
+     }
+     60% {
+          translate: -90vw 0;
+     }
+     100% {
+          translate: 0 0;
+     }
 }
