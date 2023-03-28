@@ -13,13 +13,6 @@ footer .list-items {
      justify-content: space-between;
      gap: 5%;
 
-     a {
-          transition: 300ms;
-          transform-origin: left center;
-     }
-     a:hover {
-          scale: 1.1 1;
-     }
      button {
           font-size: 20px;
      }
@@ -38,6 +31,13 @@ footer .list-items {
                display: flex;
                gap: 10px;
                align-items: center;
+               transition: 300ms;
+               transform-origin: left center;
+          }
+
+          & > a:hover {
+               scale: 1.1 1;
+               color: #f4013d;
           }
      }
      .list-item:first-child {
@@ -51,6 +51,9 @@ footer .list-items {
           }
      }
      .list-item:last-child {
+          & > a:hover {
+               color: white;
+          }
           .icons {
                display: flex;
                gap: 10px;

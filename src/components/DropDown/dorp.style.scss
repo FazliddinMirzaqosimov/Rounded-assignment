@@ -1,0 +1,30 @@
+.dorpdown-comp {
+     position: relative;
+     img {
+          width: 20px;
+     }
+     .lang {
+          display: flex;
+          gap: 5px;
+          border: none;
+          background-color: transparent;
+          &:hover {
+               color: #ce3333;
+          }
+     }
+     &:hover .anothers {
+          opacity: 1;
+          translate: 0;
+     }
+
+     .anothers {
+          position: absolute;
+          opacity: 0;
+          translate: 100px;
+          transition: 300ms;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+     }
+}

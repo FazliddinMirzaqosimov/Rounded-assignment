@@ -4,6 +4,7 @@ import logo from "../../../assets/images/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useEffect, useState } from "react";
 import { useCursorContext } from "../../Cursor";
+import DropDown from "../../DropDown";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,9 @@ function Navbar() {
           <Link to={"/"}>КУРСЫ</Link>
           <Link to={"/"}>НОВОСТИ</Link>
           <Link to={"/"}>НАСТАВНИКИ ✨</Link>
-          <Link to={"/"}>RU e d</Link>
+          <Link to={"/"}>
+            <DropDown />
+          </Link>
           <Link to={"/"}>КОНТАКТЫ</Link>
         </div>
         <div className="menu-button" onClick={() => setOpen(!open)}>
